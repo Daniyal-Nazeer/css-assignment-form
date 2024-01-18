@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+     
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+
+      body {
+    background: url('image/bg-01.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+      .main-block {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: #000;
+    width: 40%;
+    margin: 100px auto;
+}
+
+      form {
+      background: #000;
+      }
+
+      .title h2 {
+        text-align: center;
+    }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+   
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      cursor: pointer;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+
+      .form {
+    background: linear-gradient(45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8));
+    padding: 15vh;
+}
+input[type="text"]:focus {
+    border-bottom: 1px solid #3498db;
+}
+
+input[type="password"]:focus {
+    border-bottom: 1px solid #3498db;
+}
+
+select:focus{
+    border-bottom: 1px solid #3498db;
+}
+
+
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="form">
+    <div class="main-block">
+      <form>
+        <div class="title"> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input type="text" name="name" placeholder="Full name">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Phone number">
+          <input type="password" name="name" placeholder="Password">
+          <select>
+            <option value="course-type" selected>Course type*</option>
+            <option value="HTML">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="php">PHP</option>
+            <option value="ract">React</option>
+            <option value="next">Next JS</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
